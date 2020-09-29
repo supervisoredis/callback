@@ -1,4 +1,4 @@
-package callback
+package main
 
 import (
 	"callback/httpv1"
@@ -8,9 +8,6 @@ import (
 
 //主函数
 func main() {
-	//fmt.Println(resp)
-	//fmt.Println(u)
-	//开放的url名和对应的func调用
 	http.HandleFunc("/hello", httpv1.PostAlarmInfo)
 	http.HandleFunc("/telephonestatus", httpv1.Telephonestatus)
 	//监听本机的IP和端口信息
