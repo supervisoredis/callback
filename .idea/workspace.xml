@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
-      <change afterPath="$PROJECT_DIR$/callback" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,9 +91,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601351019961">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="355" y="172" key="SettingsEditor" timestamp="1601363338297">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="355" y="172" key="SettingsEditor/67.27.1613.1023@67.27.1613.1023" timestamp="1601363338297" />
+    <state x="425" y="215" width="800" height="531" key="Vcs.Push.Dialog.v2" timestamp="1601362753490">
+      <screen x="67" y="27" width="1613" height="1023" />
     </state>
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601351019961" />
+    <state x="425" y="215" width="800" height="531" key="Vcs.Push.Dialog.v2/67.27.1613.1023@67.27.1613.1023" timestamp="1601362753490" />
+    <state x="681" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601362722019">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="681" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1613.1023@67.27.1613.1023" timestamp="1601362722019" />
   </component>
 </project>
