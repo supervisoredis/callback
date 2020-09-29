@@ -32,7 +32,7 @@ var U User
 
 func GetAllUserInfo() {
 	//通过系统指令curl调用官方API获取所有用户信息（使用root帐号）
-	command := "curl -u root:root  httpv1://11.8.75.19/api/portal/user"
+	command := "curl -u root:root  http://11.8.75.19/api/portal/user"
 	cmd := exec.Command("/bin/bash", "-c", command)
 	bytes, _ := cmd.Output()
 	resp := string(bytes)

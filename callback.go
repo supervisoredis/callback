@@ -1,7 +1,6 @@
 package main
 
 import (
-	"callback/data"
 	"callback/httpv1"
 	"callback/module"
 	"net/http"
@@ -9,7 +8,7 @@ import (
 
 //主函数
 func main() {
-	data.GetAllUserInfo()
+
 	http.HandleFunc("/hello", httpv1.PostAlarmInfo)
 	http.HandleFunc("/telephonestatus", httpv1.Telephonestatus)
 	//监听本机的IP和端口信息

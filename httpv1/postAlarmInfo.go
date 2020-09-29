@@ -19,7 +19,7 @@ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 	body, _ := ioutil.ReadAll(req.Body)
 	alarm := string(body)
 	json.Unmarshal([]byte(alarm), &a)
-
+	data.GetAllUserInfo()
 	fmt.Println(data.U)
 	//从告警信息中读取用户名数据，对比获取到的用户数据，得到电话字段，与告警信息做拼接形成新的告警模式
 	for _, i := range a.Users {
