@@ -19,4 +19,7 @@ func Telephonestatus(_ http.ResponseWriter, req *http.Request) {
 	//保存到日志中
 	l := "[TELEPHONE_STATUS]" + time.Now().Format("2006-01-02 15:04:05") + ":  status: " + t.Status + ",  message: " + t.Msg
 	module.WriteLog("telephone_log.log", l)
+	if t.Status == "0" || t.Status == "1" {
+
+	}
 }
