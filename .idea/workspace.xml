@@ -22,7 +22,8 @@
     <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callback.go" beforeDir="false" afterPath="$PROJECT_DIR$/callback.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

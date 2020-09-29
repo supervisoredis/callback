@@ -18,9 +18,9 @@ var a data.Alarm
 func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 	body, _ := ioutil.ReadAll(req.Body)
 	alarm := string(body)
-	fmt.Println(alarm)
 	json.Unmarshal([]byte(alarm), &a)
-	data.GetAllUserInfo()
+
+	fmt.Println(data.U)
 	//从告警信息中读取用户名数据，对比获取到的用户数据，得到电话字段，与告警信息做拼接形成新的告警模式
 	for _, i := range a.Users {
 		for _, j := range data.U.Dat.List {
@@ -31,6 +31,7 @@ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 					"event_type": {a.Event_type},
 					"phone":      {j.Phone},
 				}
+				fmt.Println(urlValuse)
 				reqBody := urlValuse.Encode()
 				conf := module.C.GetConf()
 				resp, err := http.Post(conf.CallbackAddress, "application/json;charset=UTF-8", strings.NewReader(reqBody))
