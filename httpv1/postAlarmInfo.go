@@ -33,17 +33,9 @@ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 				}
 				reqBody := urlValuse.Encode()
 				conf := module.C.GetConf()
-			SEND:
 				resp, err := http.Post(conf.CallbackAddress, "application/json;charset=UTF-8", strings.NewReader(reqBody))
 				l := "[INFO]" + time.Now().Format("2006-01-02 15:04:05") + ":  endpoint: " + a.Endpoint + ",  sname: " + a.Sname + ", event_type: " + a.Event_type + ", phone: " + j.Phone
 				module.WriteLog("alarm_log.log", l)
-				time.Sleep(30 * time.Second)
-				if t.Status == "1" || t.Status == "2" {
-					goto SEND
-				} else {
-					l := "[INFO]" + time.Now().Format("2006-01-02 15:04:05") + ":  endpoint: " + a.Endpoint + ",  sname: " + a.Sname + ", event_type: " + a.Event_type + ", phone: " + j.Phone
-					module.WriteLog("alarm_log.log", l)
-				}
 				if err != nil {
 					module.WriteLog("ERROR.log", err.Error())
 				}
