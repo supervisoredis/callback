@@ -4,9 +4,9 @@ package data
 type Telephonestatus struct {
 	Status string //状态
 	Msg    string //信息
-	Result ALARM
+	Alarm  alarm
 }
-type ALARM struct {
+type alarm struct {
 	Endpoint   string
 	Sname      string
 	Event_type string

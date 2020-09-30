@@ -16,19 +16,11 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
-      <change afterPath="$PROJECT_DIR$/callback" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +31,8 @@
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +53,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -95,9 +89,37 @@
     <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601359584404">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="355" y="172" key="SettingsEditor" timestamp="1601363338297">
+      <screen x="67" y="27" width="1613" height="1023" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601359584404" />
+    <state x="355" y="172" key="SettingsEditor/67.27.1613.1023@67.27.1613.1023" timestamp="1601363338297" />
+    <state x="425" y="215" width="800" height="531" key="Vcs.Push.Dialog.v2" timestamp="1601369773803">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601351019961" />
+    <state x="425" y="215" width="800" height="531" key="Vcs.Push.Dialog.v2/67.27.1613.1023@67.27.1613.1023" timestamp="1601369773803" />
+    <state x="681" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601372293709">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="681" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1613.1023@67.27.1613.1023" timestamp="1601372293709" />
+    <state x="711" y="284" width="315" height="507" key="refactoring.ChangeSignatureDialog" timestamp="1601364354818">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="711" y="284" width="315" height="507" key="refactoring.ChangeSignatureDialog/67.27.1613.1023@67.27.1613.1023" timestamp="1601364354818" />
+    <state x="536" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1601368626783">
+      <screen x="67" y="27" width="1613" height="1023" />
+    </state>
+    <state x="536" y="250" width="672" height="678" key="search.everywhere.popup/67.27.1613.1023@67.27.1613.1023" timestamp="1601368626783" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/httpv1/getTelephoneStatus.go</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
