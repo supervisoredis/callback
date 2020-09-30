@@ -26,14 +26,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
+      <change afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/log.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -55,12 +63,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build callback" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="callback" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/test.go" />
+      <package value="callback" />
+      <directory value="$PROJECT_DIR$" />
+      <option name="run" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 构建.go build callback" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,10 +122,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601359584404">
+    <state width="699" height="213" key="GridCell.Tab.0.bottom" timestamp="1601430768902">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601359584404" />
+    <state width="699" height="213" key="GridCell.Tab.0.bottom/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601430768902" />
+    <state width="699" height="213" key="GridCell.Tab.0.center" timestamp="1601430768901">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="699" height="213" key="GridCell.Tab.0.center/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601430768901" />
+    <state width="699" height="213" key="GridCell.Tab.0.left" timestamp="1601430768901">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="699" height="213" key="GridCell.Tab.0.left/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601430768901" />
+    <state width="699" height="213" key="GridCell.Tab.0.right" timestamp="1601430768902">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="699" height="213" key="GridCell.Tab.0.right/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601430768902" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601430039507">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601430039507" />
     <state x="537" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601429186374">
       <screen x="0" y="23" width="1440" height="823" />
     </state>

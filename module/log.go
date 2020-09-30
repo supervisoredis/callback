@@ -7,7 +7,6 @@ import (
 )
 
 //日志保存路径和格式
-var path = LOGPATH + time.Now().Format(FORMAT) + "/"
 
 const (
 	LOGPATH  = "./log/"
@@ -17,6 +16,7 @@ const (
 
 //日志内容写入函数
 func WriteLog(fileName, msg string) error {
+	path := LOGPATH + time.Now().Format(FORMAT) + "/"
 	if !IsExist(path) {
 		return CreateDir(path)
 	}
