@@ -4,7 +4,6 @@ import (
 	"callback/data"
 	"callback/module"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -19,7 +18,6 @@ func Telephonestatus(_ http.ResponseWriter, req *http.Request) {
 	body, _ := ioutil.ReadAll(req.Body)
 	status := string(body)
 	_ = json.Unmarshal([]byte(status), &t)
-	fmt.Println(t)
 	//保存到日志中
 	if t.Status == "0" || t.Status == "1" {
 		l := "[TELEPHONE_STATUS]" +

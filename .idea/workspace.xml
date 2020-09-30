@@ -26,10 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
-      <change afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,10 +136,10 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="699" height="213" key="GridCell.Tab.0.right/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601430768902" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601430039507">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601431212577">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601430039507" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601431212577" />
     <state x="537" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601429186374">
       <screen x="0" y="23" width="1440" height="823" />
     </state>

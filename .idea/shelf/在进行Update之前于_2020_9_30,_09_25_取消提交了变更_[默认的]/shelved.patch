@@ -1,0 +1,56 @@
+Index: httpv1/postAlarmInfo.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package httpv1\n\nimport (\n\t\"callback/data\"\n\t\"callback/module\"\n\t\"encoding/json\"\n\t\"fmt\"\n\t\"io/ioutil\"\n\t\"net/http\"\n\t\"net/url\"\n\t\"strings\"\n\t\"time\"\n)\n\nvar a data.Alarm\n\n//提供一个获取用户数据和告警信息的接口，通过比较和处理，拼接成为新的JSON格式数据使用POST发送给回调接口\nfunc PostAlarmInfo(w http.ResponseWriter, req *http.Request) {\n\tbody, _ := ioutil.ReadAll(req.Body)\n\talarm := string(body)\n\tfmt.Println(alarm)\n\tjson.Unmarshal([]byte(alarm), &a)\n\tdata.GetAllUserInfo()\n\t//从告警信息中读取用户名数据，对比获取到的用户数据，得到电话字段，与告警信息做拼接形成新的告警模式\n\tfor _, i := range a.Users {\n\t\tfor _, j := range data.U.Dat.List {\n\t\t\tif i == j.Username {\n\t\t\t\turlValuse := url.Values{\n\t\t\t\t\t\"endpoint\":   {a.Endpoint},\n\t\t\t\t\t\"sname\":      {a.Sname},\n\t\t\t\t\t\"event_type\": {a.Event_type},\n\t\t\t\t\t\"phone\":      {j.Phone},\n\t\t\t\t}\n\t\t\t\treqBody := urlValuse.Encode()\n\t\t\t\tconf := module.C.GetConf()\n\t\t\t\tresp, err := http.Post(conf.CallbackAddress, \"application/json;charset=UTF-8\", strings.NewReader(reqBody))\n\t\t\t\tif err != nil {\n\t\t\t\t\tmodule.WriteLog(\"ERROR.log\", err.Error())\n\t\t\t\t}\n\t\t\t\tl := \"[INFO]\" + time.Now().Format(\"2006-01-02 15:04:05\") + \":  endpoint: \" + a.Endpoint + \",  sname: \" + a.Sname + \", event_type: \" + a.Event_type + \", phone: \" + j.Phone\n\t\t\t\tmodule.WriteLog(\"alarm_log.log\", l)\n\t\t\t\t//fmt.Println(resp)\n\t\t\t\tdefer resp.Body.Close()\n\t\t\t\t//fmt.Println(string(body))\n\t\t\t}\n\t\t}\n\t}\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- httpv1/postAlarmInfo.go	(revision c84f93b535cc2a5b26200e2c66e77e2834c5075d)
++++ httpv1/postAlarmInfo.go	(date 1601429014165)
+@@ -1,5 +1,4 @@
+ package httpv1
+-
+ import (
+ 	"callback/data"
+ 	"callback/module"
+@@ -11,9 +10,7 @@
+ 	"strings"
+ 	"time"
+ )
+-
+ var a data.Alarm
+-
+ //提供一个获取用户数据和告警信息的接口，通过比较和处理，拼接成为新的JSON格式数据使用POST发送给回调接口
+ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
+ 	body, _ := ioutil.ReadAll(req.Body)
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"BRANCH:master\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </select>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"4e6b37d2-c40e-4f35-9404-369d5c49977c\" name=\"默认的\" comment=\"version 1.0\">\n      <change afterPath=\"$PROJECT_DIR$/callback\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/httpv1/postAlarmInfo.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/httpv1/postAlarmInfo.go\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"GOROOT\" path=\"/usr/local/go\" />\n  <component name=\"Git.Settings\">\n    <option name=\"PUSH_TAGS\">\n      <GitPushTagMode>\n        <option name=\"argument\" value=\"--tags\" />\n        <option name=\"title\" value=\"All\" />\n      </GitPushTagMode>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1iAVlAfksuJfLQJG3ObvgU8qnAQ\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"新增\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\n    <property name=\"GO_FMT\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"go.import.settings.migrated\" value=\"true\" />\n    <property name=\"go.sdk.automatically.set\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"master\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"version 1.0\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"version 1.0\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"320\" y=\"174\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1601359584404\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"823\" />\n    </state>\n    <state x=\"320\" y=\"174\" key=\"Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823\" timestamp=\"1601359584404\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision c84f93b535cc2a5b26200e2c66e77e2834c5075d)
++++ .idea/workspace.xml	(date 1601362645387)
+@@ -27,8 +27,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
+       <change afterPath="$PROJECT_DIR$/callback" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -95,9 +93,9 @@
+     <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601359584404">
++    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601362607663">
+       <screen x="0" y="23" width="1440" height="823" />
+     </state>
+-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601359584404" />
++    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601362607663" />
+   </component>
+ </project>
+\ No newline at end of file
