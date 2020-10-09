@@ -19,13 +19,19 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0" />
+    <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Update_2020_9_30__09_25____.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行Update之前于_2020_9_30,_09_25_取消提交了变更_[默认的]/callback" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行Update之前于_2020_9_30,_09_25_取消提交了变更_[默认的]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +51,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -98,7 +109,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -113,11 +124,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="version 1.0" />
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="433" y="265" key="#Notifications" timestamp="1602204202684">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="433" y="265" key="#Notifications/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1602204202684" />
     <state width="699" height="213" key="GridCell.Tab.0.bottom" timestamp="1601432162870">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -138,10 +153,10 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="419" y="139" key="VCS.ChangeListViewerDialog/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601431621483" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601431212577">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1602204029489">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601431212577" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1602204029489" />
     <state x="537" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601429186374">
       <screen x="0" y="23" width="1440" height="823" />
     </state>

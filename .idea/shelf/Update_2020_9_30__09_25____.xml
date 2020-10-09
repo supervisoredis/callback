@@ -1,9 +1,0 @@
-<changelist name="在进行Update之前于_2020_9_30,_09_25_取消提交了变更_[默认的]" date="1601429178372" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在进行Update之前于_2020_9_30,_09_25_取消提交了变更_[默认的]/shelved.patch" />
-  <option name="DESCRIPTION" value="在进行Update之前于 2020/9/30, 09:25 取消提交了变更 [默认的]" />
-  <binary>
-    <option name="BEFORE_PATH" />
-    <option name="AFTER_PATH" value="callback" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行Update之前于_2020_9_30,_09_25_取消提交了变更_[默认的]/callback" />
-  </binary>
-</changelist>
