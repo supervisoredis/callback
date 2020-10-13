@@ -18,7 +18,7 @@ const (
 func WriteLog(fileName, msg string) error {
 	path := LOGPATH + time.Now().Format(FORMAT) + "/"
 	if !IsExist(path) {
-		return CreateDir(path)
+		CreateDir(path)
 	}
 	var (
 		err error
