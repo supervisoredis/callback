@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
-	a := time.Now().Format("20060102")
-	fmt.Println(a)
+	a := time.Now().Hour()
+	b := time.Now().Minute()
+	c := time.Now().Second()
+	fmt.Println(a, b, c)
 }

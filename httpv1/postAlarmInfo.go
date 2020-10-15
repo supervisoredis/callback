@@ -24,8 +24,8 @@ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 		for _, j := range data.U.Dat.List {
 			if i == j.Username {
 				urlValuse := url.Values{
-					"endpoint":   {a.Endpoint},
-					"sname":      {a.Sname},
+					"endpoint":   {a.Endpoint + "主机&"},
+					"sname":      {a.Sname + "&"},
 					"event_type": {a.Event_type},
 					"phone":      {j.Phone},
 				}
