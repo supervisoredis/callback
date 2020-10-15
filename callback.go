@@ -8,7 +8,6 @@ import (
 
 //主函数
 func main() {
-	module.TimeToCreatelogDir()
 	http.HandleFunc("/hello", httpv1.PostAlarmInfo)
 	http.HandleFunc("/telephonestatus", httpv1.Telephonestatus)
 	//监听本机的IP和端口信息

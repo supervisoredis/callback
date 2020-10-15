@@ -26,13 +26,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
-      <change afterPath="$PROJECT_DIR$/module/time.go" afterDir="false" />
+    <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="修复了log日志第一条告警信息没有打印的bug">
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callback.go" beforeDir="false" afterPath="$PROJECT_DIR$/callback.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/log.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,10 +78,14 @@
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.全局.GOPATH.is.expanded" value="true" />
+    <property name="configurable.模块.GOPATH.is.expanded" value="false" />
+    <property name="configurable.项目.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RunManager">
     <configuration name="go build callback" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -130,7 +136,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new" />
     <MESSAGE value="version 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
+    <MESSAGE value="修复了log日志第一条告警信息没有打印的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了log日志第一条告警信息没有打印的bug" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="-685" key="#Go_模块" timestamp="1602471077584">
@@ -141,22 +151,34 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="433" y="265" key="#Notifications/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1602204202684" />
-    <state width="699" height="213" key="GridCell.Tab.0.bottom" timestamp="1601432162870">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="549" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602743294383">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="549" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602743294383" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1602754349891">
+      <screen x="-141" y="-1050" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1440.900/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602754349891" />
     <state width="699" height="213" key="GridCell.Tab.0.bottom/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601432162870" />
-    <state width="699" height="213" key="GridCell.Tab.0.center" timestamp="1601432162870">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1602754349889">
+      <screen x="-141" y="-1050" width="1680" height="1050" />
     </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1440.900/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602754349889" />
     <state width="699" height="213" key="GridCell.Tab.0.center/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601432162870" />
-    <state width="699" height="213" key="GridCell.Tab.0.left" timestamp="1601432162869">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1602754349889">
+      <screen x="-141" y="-1050" width="1680" height="1050" />
     </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1440.900/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602754349889" />
     <state width="699" height="213" key="GridCell.Tab.0.left/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601432162869" />
-    <state width="699" height="213" key="GridCell.Tab.0.right" timestamp="1601432162870">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1602754349890">
+      <screen x="-141" y="-1050" width="1680" height="1050" />
     </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1440.900/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602754349890" />
     <state width="699" height="213" key="GridCell.Tab.0.right/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601432162870" />
+    <state x="208" y="-886" key="SettingsEditor" timestamp="1602754401091">
+      <screen x="-141" y="-1050" width="1680" height="1050" />
+    </state>
+    <state x="208" y="-886" key="SettingsEditor/0.0.1440.900/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602754401091" />
     <state x="419" y="139" key="VCS.ChangeListViewerDialog" timestamp="1601431621483">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
