@@ -20,6 +20,7 @@ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 	data.GetAllUserInfo()
 	if a.Sname == "主机失联" {
 		if module.ServerPing(a.Endpoint) {
+			//fmt.Println("ping success")
 			reqBody := "endpoint=" + a.Endpoint + "服务器&\nsname=agent断开连接&\nevent_type=\nphone=13262821472"
 			conf := module.C.GetConf()
 			resp, err := http.Post(conf.CallbackAddress, "text/plain", strings.NewReader(reqBody))
@@ -30,6 +31,7 @@ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 			}
 			defer resp.Body.Close()
 		} else {
+			//fmt.Println("ping fail")
 			reqBody := "endpoint=" + a.Endpoint + "服务器&\nsname=主机断开连接，请及时关注&\nevent_type=\nphone=13262821472"
 			conf := module.C.GetConf()
 			resp, err := http.Post(conf.CallbackAddress, "text/plain", strings.NewReader(reqBody))
