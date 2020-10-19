@@ -12,6 +12,7 @@ type CallbackAddr struct {
 	AdminPhone           string `yaml:"adminPhone"` //有一些重要的告警信息直接通知管理员
 	UserName             string `yaml:"userName"`
 	UserPasswd           string `yaml:"userPasswd"`
+	LocalPort            string `yaml:"localport"`
 }
 
 var C CallbackAddr
