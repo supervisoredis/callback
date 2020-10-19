@@ -1,2 +1,6 @@
 ---
 callbackAddress: "httpv1://192.168.72.210:8788/hello"
+localCallbackAddress: "11.8.75.19:12345"
+adminPhone: "13262821472"
+userName: "root"
+userPasswd: "root"

@@ -7,7 +7,11 @@ import (
 
 //记录回调地址的机构提，从配置文件中获取地址
 type CallbackAddr struct {
-	CallbackAddress string `yaml:"callbackAddress"`
+	CallbackAddress      string `yaml:"callbackAddress"`
+	LocalCallbackAddress string `yaml:"localCallbackAddress"`
+	AdminPhone           string `yaml:"adminPhone"` //有一些重要的告警信息直接通知管理员
+	UserName             string `yaml:"userName"`
+	UserPasswd           string `yaml:"userPasswd"`
 }
 
 var C CallbackAddr
