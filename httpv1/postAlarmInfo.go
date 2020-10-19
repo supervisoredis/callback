@@ -21,10 +21,11 @@ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 	if a.Sname == "主机失联" {
 		if module.ServerPing(a.Endpoint) {
 			//fmt.Println("ping success")
-			reqBody := "endpoint=" + a.Endpoint + "服务器&\nsname=agent断开连接&\nevent_type=\nphone=13262821472"
 			conf := module.C.GetConf()
+			reqBody := "endpoint=" + a.Endpoint + "服务器&\nsname=agent断开连接&\nevent_type=" + a.Event_type + "&\nphone=" + conf.AdminPhone
+
 			resp, err := http.Post(conf.CallbackAddress, "text/plain", strings.NewReader(reqBody))
-			l := "[INFO]" + time.Now().Format("2006-01-02 15:04:05") + ":  endpoint: " + a.Endpoint + ",  sname: agent断开连接, event_type:alert , phone:13262821472 "
+			l := "[INFO]" + time.Now().Format("2006-01-02 15:04:05") + ":  endpoint: " + a.Endpoint + ",  sname: agent断开连接, event_type:" + a.Event_type + "&\nphone:" + conf.AdminPhone
 			module.WriteLog("alarm_log.log", l)
 			if err != nil {
 				module.WriteLog("ERROR.log", err.Error())
@@ -32,8 +33,9 @@ func PostAlarmInfo(w http.ResponseWriter, req *http.Request) {
 			defer resp.Body.Close()
 		} else {
 			//fmt.Println("ping fail")
-			reqBody := "endpoint=" + a.Endpoint + "服务器&\nsname=主机断开连接，请及时关注&\nevent_type=\nphone=13262821472"
 			conf := module.C.GetConf()
+			reqBody := "endpoint=" + a.Endpoint + "服务器&\nsname=主机断开连接，请及时关注&\nevent_type=\nphone=13262821472"
+
 			resp, err := http.Post(conf.CallbackAddress, "text/plain", strings.NewReader(reqBody))
 			l := "[INFO]" + time.Now().Format("2006-01-02 15:04:05") + ":  endpoint: " + a.Endpoint + ",  sname: 主机断开连接, event_type:alert , phone:13262821472 "
 			module.WriteLog("alarm_log.log", l)
