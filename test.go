@@ -1,11 +1,17 @@
 package main
 
 import (
+	"callback/module"
 	"fmt"
-	"time"
+	"os/exec"
 )
 
 func main() {
-	a := time.Now().Format("20060102")
-	fmt.Println(a)
+	conf := module.C.GetConf()
+	command := "curl -u " + conf.UserName + ":" + conf.UserPasswd + " http://" + conf.LocalCallbackAddress + "/api/portal/user"
+	cmd := exec.Command("/bin/bash", "-c", command)
+	bytes, _ := cmd.Output()
+	resp := string(bytes)
+	fmt.Println(resp)
+	fmt.Println(conf.LocalCallbackAddress + ":" + conf.LocalPort)
 }
