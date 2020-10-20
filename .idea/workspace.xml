@@ -26,11 +26,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="添加主机失联判断功能">
+    <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="配置文件优化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etc/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callback.go" beforeDir="false" afterPath="$PROJECT_DIR$/callback.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,8 +139,10 @@
     <MESSAGE value="version 1.0" />
     <MESSAGE value="修复了log日志第一条告警信息没有打印的bug" />
     <MESSAGE value="10.19" />
+    <MESSAGE value="配置文件修改" />
     <MESSAGE value="添加主机失联判断功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加主机失联判断功能" />
+    <MESSAGE value="配置文件优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置文件优化" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -153,11 +156,11 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="433" y="265" key="#Notifications/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1602204202684" />
-    <state x="-328" y="-731" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603089358336">
+    <state x="-328" y="-731" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603089851488">
       <screen x="-969" y="-1027" width="1680" height="1027" />
     </state>
     <state x="549" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602743294383" />
-    <state x="-328" y="-731" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.831/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603089358336" />
+    <state x="-328" y="-731" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.831/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603089851488" />
     <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1603013355136">
       <screen x="-969" y="-1027" width="1680" height="1027" />
     </state>
@@ -186,6 +189,10 @@
     <state width="699" height="213" key="GridCell.Tab.0.right/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601432162870" />
     <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1440.829/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603013355136" />
     <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1440.877/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602760234311" />
+    <state x="-491" y="-745" key="MultipleFileMergeDialog" timestamp="1603089899820">
+      <screen x="-969" y="-1027" width="1680" height="1027" />
+    </state>
+    <state x="-491" y="-745" key="MultipleFileMergeDialog/0.23.1440.831/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603089899820" />
     <state x="208" y="-886" key="SettingsEditor" timestamp="1602754401091">
       <screen x="-141" y="-1050" width="1680" height="1050" />
     </state>
@@ -194,13 +201,13 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="419" y="139" key="VCS.ChangeListViewerDialog/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601431621483" />
-    <state x="-596" y="-838" key="Vcs.Push.Dialog.v2" timestamp="1603089101981">
+    <state x="-596" y="-838" key="Vcs.Push.Dialog.v2" timestamp="1603089884175">
       <screen x="-969" y="-1027" width="1680" height="1027" />
     </state>
     <state x="232" y="-857" key="Vcs.Push.Dialog.v2/0.0.1440.900/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602818712762" />
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1602204029489" />
     <state x="-596" y="-838" key="Vcs.Push.Dialog.v2/0.23.1440.829/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603069282807" />
-    <state x="-596" y="-838" key="Vcs.Push.Dialog.v2/0.23.1440.831/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603089101981" />
+    <state x="-596" y="-838" key="Vcs.Push.Dialog.v2/0.23.1440.831/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603089884175" />
     <state x="232" y="-857" key="Vcs.Push.Dialog.v2/0.23.1440.877/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602818817626" />
     <state x="537" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601429186374">
       <screen x="0" y="23" width="1440" height="823" />

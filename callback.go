@@ -12,7 +12,7 @@ func main() {
 	http.HandleFunc("/telephonestatus", httpv1.Telephonestatus)
 	//监听本机的IP和端口信息
 	conf := module.C.GetConf()
-	err := http.ListenAndServe(conf.LocalCallbackAddress+conf.LocalPort, nil)
+	err := http.ListenAndServe(conf.LocalCallbackAddress+":"+conf.LocalPort, nil)
 	if err != nil {
 		module.WriteLog("ERROR.log", err.Error())
 	}
