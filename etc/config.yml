@@ -1,5 +1,5 @@
 ---
-callbackAddress: "http://11.8.75.206:9999/user/user/service_warning?Content-Type=text/plain"
+callbackAddress: "http://11.8.75.205:9999/user/user/service_warning?Content-Type=text/plain"
 localCallbackAddress: "11.8.75.19"
 localPort: "12345"
 adminPhone: "13262821472"
