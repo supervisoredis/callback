@@ -28,8 +28,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="配置文件优化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etc/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,6 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.全局.GOPATH.is.expanded" value="true" />
@@ -200,11 +199,11 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="419" y="139" key="VCS.ChangeListViewerDialog/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601431621483" />
-    <state x="311" y="184" key="Vcs.Push.Dialog.v2" timestamp="1604568777593">
+    <state x="311" y="184" key="Vcs.Push.Dialog.v2" timestamp="1604650102643">
       <screen x="0" y="23" width="1403" height="877" />
     </state>
     <state x="232" y="-857" key="Vcs.Push.Dialog.v2/0.0.1440.900/-141.-1050.1680.1050@-141.-1050.1680.1050" timestamp="1602818712762" />
-    <state x="311" y="184" key="Vcs.Push.Dialog.v2/0.23.1403.877/-1080.-997.1080.1897@0.23.1403.877" timestamp="1604568777593" />
+    <state x="311" y="184" key="Vcs.Push.Dialog.v2/0.23.1403.877/-1080.-997.1080.1897@0.23.1403.877" timestamp="1604650102643" />
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1602204029489" />
     <state x="-596" y="-838" key="Vcs.Push.Dialog.v2/0.23.1440.829/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603069282807" />
     <state x="-596" y="-838" key="Vcs.Push.Dialog.v2/0.23.1440.830/-969.-1027.1680.1027@-969.-1027.1680.1027" timestamp="1603160361398" />
