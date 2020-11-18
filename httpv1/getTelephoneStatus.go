@@ -4,8 +4,10 @@ import (
 	"callback/data"
 	"callback/module"
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"net/http"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -18,16 +20,14 @@ func Telephonestatus(_ http.ResponseWriter, req *http.Request) {
 	status := string(body)
 	_ = json.Unmarshal([]byte(status), &t)
 	//保存到日志中
-	if t.Status == "1" {
+	if t.Status == "1" && t.Alarm.Times != "5" {
+		//time.Sleep(60*time.Second)
+		times, _ := strconv.Atoi(t.Alarm.Times)
+		times = times + 1
 		l := "[TELEPHONE_STATUS]" + time.Now().Format("2006-01-02 15:04:05") + ":  status: " + t.Status + ",  message: " + t.Msg
 		module.WriteLog("telephone_log.log", l)
-		//urlValuse := url.Values{
-		//	"endpoint":   {t.Alarm.Endpoint},
-		//	"sname":      {t.Alarm.Sname},
-		//	"event_type": {t.Alarm.Event_type},
-		//	"phone":      {t.Alarm.Phone},
-		//}
-		reqBody := "endpoint=" + t.Alarm.Endpoint + "服务器&\nsname=" + t.Alarm.Sname + "&\nevent_type=" + t.Alarm.Event_type + "\nphone=" + t.Alarm.Phone
+		reqBody := "endpoint=" + t.Alarm.Endpoint + "服务器&\nsname=" + t.Alarm.Sname + "&\nevent_type=" + t.Alarm.Event_type + "\nphone=" + t.Alarm.Phone + "\ntimes=" + strconv.Itoa(times)
+		fmt.Println(reqBody)
 		conf := module.C.GetConf()
 		resp, err := http.Post(conf.CallbackAddress, "text/plain", strings.NewReader(reqBody))
 		if err != nil {

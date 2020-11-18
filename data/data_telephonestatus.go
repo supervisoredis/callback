@@ -11,4 +11,5 @@ type alarm struct {
 	Sname      string
 	Event_type string
 	Phone      string
+	Times      string
 }
