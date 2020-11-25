@@ -1,6 +1,5 @@
 package data
 
-//从系统提供的回调接口中获取的一整份的告警信息的结构体表示（JSON格式）
 type Alarm struct {
 	Id           int64
 	Sid          int64

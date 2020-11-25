@@ -25,15 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="version 1.0">
-      <change afterPath="$PROJECT_DIR$/data/data_group.go" afterDir="false" />
+    <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="添加了次数和时间限制">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_telephonestatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_telephonestatus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_alarm.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_alarm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/ping.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/ping.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,6 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.全局.GOPATH.is.expanded" value="true" />
@@ -134,17 +134,19 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="version 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
+    <MESSAGE value="添加了次数和时间限制" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了次数和时间限制" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1632" y="897" width="359" height="421" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605516626339">
+    <state x="1632" y="897" width="367" height="421" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606199710692">
       <screen x="1080" y="870" width="1680" height="1050" />
     </state>
     <state x="355" y="753" width="359" height="421" key="#com.intellij.fileTypes.FileTypeChooser/1080.870.1680.1050/0.897.1080.1023@0.897.1080.1023" timestamp="1605144199159" />
     <state x="1632" y="897" key="#com.intellij.fileTypes.FileTypeChooser/1080.870.1680.1050/0.897.1080.1023@1080.870.1680.1050" timestamp="1605516626339" />
+    <state x="1632" y="897" width="367" height="421" key="#com.intellij.fileTypes.FileTypeChooser/1080.870.1680.1050/0.897.1080.926@1080.870.1680.1050" timestamp="1606199710692" />
     <state x="223" y="692" width="624" height="543" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605153428209">
       <screen x="0" y="897" width="1080" height="1023" />
     </state>
@@ -177,10 +179,11 @@
       <screen x="1080" y="870" width="1680" height="1050" />
     </state>
     <state x="1437" y="1043" width="1037" height="737" key="SettingsEditor/1080.870.1680.1050/0.897.1080.1023@1080.870.1680.1050" timestamp="1605069158311" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1601430039507">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="1453" y="1063" width="800" height="560" key="Vcs.Push.Dialog.v2" timestamp="1605690352778">
+      <screen x="1080" y="870" width="1680" height="1050" />
     </state>
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823/-141.-1027.1680.1027@0.23.1440.823" timestamp="1601430039507" />
+    <state x="1453" y="1063" width="800" height="560" key="Vcs.Push.Dialog.v2/1080.870.1680.1050/0.897.1080.925@1080.870.1680.1050" timestamp="1605690352778" />
     <state x="537" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601429186374">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
