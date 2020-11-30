@@ -1,7 +1,0 @@
----
-callbackAddress: "http://11.8.75.205:9999/user/user/service_warning?Content-Type=text/plain"
-localCallbackAddress: "11.8.75.19"
-localPort: "12345"
-adminPhone: "15601740807"
-userName: "root"
-userPasswd: "root"

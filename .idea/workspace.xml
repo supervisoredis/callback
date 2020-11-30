@@ -19,8 +19,9 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -28,13 +29,9 @@
     <list default="true" id="4e6b37d2-c40e-4f35-9404-369d5c49977c" name="默认的" comment="添加了次数和时间限制">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callback" beforeDir="false" afterPath="$PROJECT_DIR$/callback" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_alarm.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_alarm.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etc/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/etc/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/config.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/getTelephoneStatus.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpv1/postAlarmInfo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/ping.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/ping.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
